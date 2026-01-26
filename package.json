@@ -5,26 +5,37 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "prepack": "npm run build",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "packup": "npm run clean && npm run build && npm pack"
   },
-  "sideEffects": ["*.css", "*.scss"],
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
   "license": "MIT",
   "dependencies": {
-    "react-device-detect": "^2.2.3"
+    "react-device-detect": "^2.2.3",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "typescript": "^5.9.3",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
     "rollup": "^4.56.0",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"

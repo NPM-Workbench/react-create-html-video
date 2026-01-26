@@ -24,9 +24,11 @@ export default {
     commonjs(),
     typescript({ tsconfig: "./tsconfig.json" }),
     postcss({
-      extract: true,
+      inject: true,
+      minimize: true,
       modules: false,
-      use: ["sass"],
+      sourceMap: false,
+      use: ["sass"]
     }),
   ],
 };

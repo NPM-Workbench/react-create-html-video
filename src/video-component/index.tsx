@@ -14,9 +14,10 @@ function UIComponent(props: TInput) {
   /* hook(s) */
   const { videoSource } = useVideo(props);
 
+  /* check and render */
   if (!videoSource) return null;
   return (
-    <div className="videoParent">
+    <div className="_rcVideoParent">
       <video autoPlay loop muted playsInline src={videoSource} />
     </div>
   );

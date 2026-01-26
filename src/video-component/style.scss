@@ -1,4 +1,4 @@
-.videoParent {
+._rcVideoParent {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,6 +7,9 @@
   z-index: 0;
   overflow: hidden;
   margin-bottom: -1px;
+  &.hiddenTransform {
+    opacity: 0;
+  }
   video {
     position: absolute;
     top: 0;
@@ -15,7 +18,4 @@
     height: 100%;
     object-fit: cover;
   }
-}
-.videoParent.hiddenTransform {
-  opacity: 0;
 }

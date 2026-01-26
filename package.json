@@ -1,15 +1,40 @@
 {
-  "name": "react-html-background-video",
+  "name": "react-create-html-video",
+  "description": "A lightweight React component for HTML5 videos with MP4/WebM support",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepack": "npm run build",
+    "clean": "rm -rf dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "sideEffects": ["*.css", "*.scss"],
+  "license": "MIT",
   "dependencies": {
     "react-device-detect": "^2.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "rollup": "^4.56.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NPM-Workbench/react-create-html-video"
+  },
+  "homepage": "https://github.com/NPM-Workbench/react-create-html-video",
+  "bugs": {
+    "url": "https://github.com/NPM-Workbench/react-create-html-video/issues"
   }
 }

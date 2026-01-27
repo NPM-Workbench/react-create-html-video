@@ -12,14 +12,33 @@ npm install react-create-html-video
 2. A lightweight API surface that is easy to understand
 3. Helps render a native HTML `<video>` element on the browser
 4. Provides support for MP4 and Webm based Video displays
+5. No manual CSS import is required — styles are bundled with the package.
+
+### 📄 API Type Signature
+```javascript
+export type TReactCreateHTMLVideo = {
+  mp4: string;
+  webm: string;
+};
+```
+### 🤝 Peer Dependencies
+```javascript
+"peerDependencies": {
+  "react": ">=17",
+  "react-dom": ">=17"
+}
+```
+### 🧪 How This Works
+1. Detects browser support using ```HTMLVideoElement.canPlayType```
+2. Prefers MP4 if supported
+3. Falls back to WebM if MP4 is unavailable
+4. Disables video rendering on Internet Explorer
+5. Returns ```null``` when no supported format is available
 
 ### 🔤 Example Usage
 ```javascript
 /* node modules */
 import { ReactCreateHTMLVideo } from "react-create-html-video";
-
-/* API Signature */
-// { mp4: string, webm: string }
 
 /* module */
 function UIComponent() {

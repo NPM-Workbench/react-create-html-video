@@ -105,6 +105,18 @@
       }
     }
   }
+  .mainInfo {
+    .dottedBg {
+      background:
+      url("https://github.com/NPM-Workbench/react-create-html-video/blob/feature/website-dev/assets/images/dotted-pattern.jpg?raw=true")
+      repeat center center;
+      background-size: 100px auto;
+      opacity: 0.25;
+      position: absolute;
+      inset: 0;
+      z-index: 100;
+    }
+  }
   .features {
     background: $black;
     z-index: 10;
@@ -260,6 +272,27 @@
       }
     }
   }
+  .skullSection {
+    padding: 100px 20px;
+    z-index: 10;
+    background: $black;
+    .container {
+      padding: 0;
+      position: relative;
+      z-index: 20;
+      p {
+        font-size: 1.5rem;
+        font-family: $headingFont;
+        font-weight: 600;
+        line-height: 1.8rem;
+        color: $white;
+        margin-bottom: 0;
+      }
+    }
+    .videoParent {
+      opacity: 0.3
+    }
+  }
 }
 @media only screen and (min-width: 768px) {
   .homePage {
@@ -320,6 +353,14 @@
         }
       }
     }
+    .skullSection {
+      .container {
+        p {
+          font-size: 2.3rem;
+          line-height: 2.75rem;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 992px) {
@@ -359,9 +400,9 @@
             flex-basis: 300px;
             display: flex;
             .iconsList {
-              width: 37.5px;
+              width: 45.5px;
               border-right: 1px solid #222;
-              padding-right: 15px;
+              padding-right: 20px;
               ul {
                 margin-bottom: 0;
                 li {
@@ -382,7 +423,7 @@
             .fileSection {
               flex-grow: 1;
               color: $white;
-              padding-left: 15px;
+              padding-left: 20px;
               font-size: 0.8rem;
               .folderIcon,
               .codeIcon {

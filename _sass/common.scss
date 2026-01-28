@@ -111,11 +111,13 @@ nav {
   }
 }
 footer {
-  background: $black url("https://npm-workbench.github.io/execute-with-retries/assets/icons/dot-white-icon.svg") repeat center center;
-  background-size: 10px;
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
   .container {
     max-width: 100%;
-    padding: 50px 20px;
+    padding: 100px 20px;
     border-top: 1px solid #333;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -124,9 +126,9 @@ footer {
       margin: 0 auto;
       .segment {
         h2 {
-          letter-spacing: -1px;
+          font-family: $bodyFont;
           font-weight: 600;
-          font-size: 0.9rem;
+          font-size: 1.0rem;
           color: $white;
           margin-bottom: 10px;
         }
@@ -176,6 +178,13 @@ footer {
         }
       }
     }
+    .attributions {
+      max-width: 1200px;
+      margin: 50px auto 0;
+      font-size: 0.8rem;
+      color: #aaa;
+      line-height: 1.2rem;
+    }
   }
 }
 @media only screen and (min-width: 768px) {
@@ -216,7 +225,7 @@ footer {
   }
   footer {
     .container {
-      padding: 50px 20px 100px;
+      padding: 75px 20px 100px;
       .gridBox {
         display: flex;
         .segment {
@@ -262,6 +271,9 @@ footer {
             }
           }
         }
+      }
+      .attributions {
+        padding: 0 40px;
       }
     }
   }

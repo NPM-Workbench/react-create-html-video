@@ -1,0 +1,270 @@
+/*
+  This is the common stylesheet. Place any/all styles that are applicable
+  across your web app.
+
+  This file imports bootstrap 3.x version into it. You can now
+  import this particular file into a css file required to handle
+  per page.
+*/
+@import "common-imports/variables.scss";
+
+body {
+  font-family: $bodyFont;
+  font-size: $baseFontSize;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: $headingFont;
+}
+h1 {
+  font-size: $h1Size;
+}
+h2 {
+  font-size: $h2Size;
+}
+h3 {
+  font-size: $h3Size;
+}
+h4 {
+  font-size: $h4Size;
+}
+a {
+  color: $linkBlue;
+}
+a:hover {
+  text-decoration: none;
+}
+.positionRelative {
+  position: relative;
+}
+.customRow:before, .customRow:after {
+  display: table;
+  content: "";
+}
+.customRow:after {
+  clear: both;
+}
+.defaultButton {
+  @include buttonReset();
+}
+.defaultButton.primaryButton {
+  background: $black;
+  border-color: $black;
+  color: $white;
+}
+.defaultButton.secondaryButton {
+  background: $white;
+  color: $black;
+  border-color: $black;
+}
+
+nav {
+  background: $black;
+  border-bottom: 1px solid #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  .gridBox {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    .segment {
+      flex-basis: 50%;
+      .appIcon {
+        width: 35px;
+        height: auto;
+        margin-top: -4px;
+        margin-right: -1px;
+      }
+      .appName {
+        color: $white;
+        font-size: 1.0rem;
+        font-family: $headingFont;
+        font-weight: 600;
+      }
+      ul.social {
+        display: flex;
+        gap: 0 12px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          a {
+            display: block;
+            img {
+              width: 25px;
+              height: auto;
+              margin-top: -4px;
+              &.gitIcon {
+                filter: invert(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .techLinks {
+    display: none;
+  }
+}
+footer {
+  background: $black url("https://npm-workbench.github.io/execute-with-retries/assets/icons/dot-white-icon.svg") repeat center center;
+  background-size: 10px;
+  .container {
+    max-width: 100%;
+    padding: 50px 20px;
+    border-top: 1px solid #333;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    .gridBox {
+      max-width: 1200px;
+      margin: 0 auto;
+      .segment {
+        h2 {
+          letter-spacing: -1px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          color: $white;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #bbb;
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+        }
+        .codeLinks {
+          margin-bottom: 0;
+          li {
+            display: inline-block;
+            position: relative;
+            margin-right: 12px;
+            &:before {
+              content: ".";
+              color: #ccc;
+              position: absolute;
+              right: -11px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            a {
+              color: $white;
+              background-clip: text;
+              font-size: 0.8rem;
+              font-style: italic;
+            }
+          }
+        }
+        .social {
+          margin-top: 25px;
+          li {
+            display: inline-block;
+            margin-right: 5px;
+            a {
+              img {
+                width: 30px;
+                height: auto;
+                border-radius: 50%;
+                &.gitIcon {
+                  filter: invert(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  nav {
+    .gridBox {
+      .segment {
+        ul.social {
+          gap: 0 15px;
+        }
+      }
+    }
+    .techLinks {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 900;
+      &.right {
+        left: auto;
+        right: 20px;
+      }
+      a {
+        color: #aaa;
+        border-radius: 10px;
+        border: 1px solid #444;
+        padding: 13px 15px 11px;
+        letter-spacing: -1px;
+        font-size: 0.65rem;
+        font-weight: 500;
+        font-family: $headingFont;
+        background: $black;
+        color: #ddd;
+        &:hover {
+          color: #eee;
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      padding: 50px 20px 100px;
+      .gridBox {
+        display: flex;
+        .segment {
+          flex-basis: 50%;
+          .social {
+            margin: 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav {
+    .techLinks {
+      left: calc((100% - 1200px + 60px)/2);
+      &.right {
+        left: auto;
+        right: calc((100% - 1200px + 60px)/2);
+      }
+    }
+  }
+  footer {
+    .container {
+      .gridBox {
+        padding: 0 40px;
+        .segment {
+          h2 {
+            font-size: 1.0rem;
+          }
+          .social {
+            li {
+              margin-right: 8.2px;
+              &:last-child {
+                margin-right: 0;
+              }
+              a {
+                img {
+                  width: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

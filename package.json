@@ -1,68 +1,20 @@
 {
   "name": "react-create-html-video",
-  "description": "A lightweight React component for HTML5 videos with MP4/WebM support",
-  "keywords": [
-    "react",
-    "react-component",
-    "background-video",
-    "html5-video",
-    "video-background",
-    "react-background-video",
-    "hero-video",
-    "landing-page-video",
-    "fullscreen-video",
-    "responsive-video",
-    "webm",
-    "mp4",
-    "ui-component",
-    "frontend",
-    "react-ui"
-  ],
-  "version": "1.1.0",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "prepack": "npm run build",
-    "clean": "rm -rf dist",
-    "packup": "npm run clean && npm run build && npm pack"
-  },
-  "sideEffects": [
-    "*.css",
-    "*.scss"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "react-device-detect": "^2.2.3",
-    "tslib": "^2.8.1"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^29.0.0",
-    "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-typescript": "^12.3.0",
-    "@types/react": "^19.2.9",
-    "@types/react-dom": "^19.2.3",
-    "rollup": "^4.56.0",
-    "rollup-plugin-postcss": "^4.0.2",
-    "sass": "^1.97.3",
-    "typescript": "^5.9.3"
-  },
-  "files": [
-    "dist"
-  ],
-  "peerDependencies": {
-    "react": ">=17",
-    "react-dom": ">=17"
+    "start": "bundle exec jekyll serve --livereload --incremental"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NPM-Workbench/react-create-html-video"
+    "url": "git+https://github.com/NPM-Workbench/react-create-html-video.git"
   },
-  "homepage": "https://github.com/NPM-Workbench/react-create-html-video",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/NPM-Workbench/react-create-html-video/issues"
-  }
+  },
+  "homepage": "https://github.com/NPM-Workbench/react-create-html-video#readme"
 }

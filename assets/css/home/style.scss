@@ -1,0 +1,27 @@
+---
+#Front End Matter Initialization - Do Not Delete This
+---
+@import "common.scss";
+@import "common-imports/variables.scss";
+@import "common-imports/app-nav.scss";
+@import "common-imports/app-footer.scss";
+@import "common-imports/jquery-video.scss";
+
+@-webkit-keyframes cursor-blink-soft{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes cursor-blink-soft{0%,49%{opacity:1}50%,100%{opacity:0}}
+
+
+.homePage {
+}
+@media only screen and (min-width: 768px) {
+  .homePage {
+  }
+}
+@media only screen and (min-width: 992px) {
+  .homePage {
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .homePage {
+  }
+}

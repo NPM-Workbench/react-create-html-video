@@ -1,4 +1,7 @@
 ![component-preview-compressed](https://github.com/user-attachments/assets/2f791123-8aa4-4118-b031-a087fcd70ebf)
+![npm](https://img.shields.io/npm/v/react-create-html-video)
+![downloads](https://img.shields.io/npm/dw/react-create-html-video)
+![license](https://img.shields.io/npm/l/react-create-html-video)
 ## React Create HTML Video
 A lightweight React component that programmatically generates and plays an HTML `<video>` element with a clean, reusable API. This library does not rely on CSS-in-JS, with styles are intentionally kept minimal. Created with Typescript support.
 

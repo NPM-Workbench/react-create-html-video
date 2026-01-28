@@ -59,8 +59,7 @@ a:hover {
 }
 
 nav {
-  background: $black;
-  border-bottom: 1px solid #222;
+  background: rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
   left: 0;
@@ -77,13 +76,13 @@ nav {
         width: 35px;
         height: auto;
         margin-top: -4px;
-        margin-right: -1px;
+        margin-right: 5px;
       }
       .appName {
         color: $white;
-        font-size: 1.0rem;
-        font-family: $headingFont;
-        font-weight: 600;
+        font-size: 0.8rem;
+        font-family: $monoFont;
+        letter-spacing: -0.5px;
       }
       ul.social {
         display: flex;
@@ -203,11 +202,11 @@ footer {
         border-radius: 10px;
         border: 1px solid #444;
         padding: 13px 15px 11px;
-        letter-spacing: -1px;
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         font-weight: 500;
-        font-family: $headingFont;
-        background: $black;
+        font-family: $monoFont;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
         color: #ddd;
         &:hover {
           color: #eee;

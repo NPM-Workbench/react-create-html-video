@@ -18,7 +18,7 @@
     "frontend",
     "react-ui"
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -61,7 +61,7 @@
     "type": "git",
     "url": "https://github.com/NPM-Workbench/react-create-html-video"
   },
-  "homepage": "https://github.com/NPM-Workbench/react-create-html-video",
+  "homepage": "https://npm-workbench.github.io/react-create-html-video/",
   "bugs": {
     "url": "https://github.com/NPM-Workbench/react-create-html-video/issues"
   }

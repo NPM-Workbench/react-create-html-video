@@ -45,7 +45,6 @@ metaKeywords: "react, react-component, background-video, html5-video, video-back
 
 <!-- [features] -->
 <section class="features positionRelative">
-  <div class="dottedBg"></div>
   <div class="container">
     <h2>
       <span class="smallText">The Quite Engine</span>
@@ -98,3 +97,80 @@ metaKeywords: "react, react-component, background-video, html5-video, video-back
   </div>
 </section>
 <!-- [features] -->
+
+<!-- [code sample] -->
+<section class="integration positionRelative">
+  <div class="container codeEditor">
+    <div class="header">
+      <div class="segment">
+        <span class="round red"></span>
+        <span class="round yellow"></span>
+        <span class="round green"></span>
+      </div>
+      <div class="segment">
+        <p>src / feature / home-page / index.tsx</p>
+      </div>
+    </div>
+    <div class="body">
+      <div class="explorer">
+        <div class="iconsList">
+          <ul class="list-unstyled">
+            <li><img src="assets/icons/code-file.png" alt="Explorer" title="Explorer"/></li>
+            <li><img src="assets/icons/code-search.png" alt="Search" title="Search"/></li>
+            <li><img src="assets/icons/code-fork.png" alt="Source Control" title="Source Control"/></li>
+            <li><img src="assets/icons/code-map.png" alt="Codemaps" title="Codemaps"/></li>
+            <li><img src="assets/icons/code-ai.png" alt="Gemini AI" title="Gemini AI"/></li>
+          </ul>
+        </div>
+        <div class="fileSection">
+          <span class="title">Explorer</span>
+          <span class="appName">
+            <img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>
+            super-dooper-monolithic
+          </span>
+          <ul class="list-unstyled">
+            <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>node_modules</li>
+            <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>public</li>
+            <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>src</li>
+            <ul class="list-unstyled">
+              <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>app</li>
+              <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>features</li>
+              <ul class="list-unstyled">
+                <li><img src="assets/icons/code-folder.png" alt="" title="" class="folderIcon"/>home-page</li>
+                <ul class="list-unstyled">
+                  <li><img src="assets/icons/code-react.png" alt="" title="" class="codeIcon"/>index.tsx</li>
+                </ul>
+              </ul>
+            </ul>
+            <li><img src="assets/icons/code-sass.png" alt="" title="" class="codeIcon"/>global.scss</li>
+            <li><img src="assets/icons/code-typescript.png" alt="" title="" class="codeIcon"/>middleware.ts</li>
+            <li><img src="assets/icons/code-node.png" alt="" title="" class="codeIcon"/>package-lock.json</li>
+            <li><img src="assets/icons/code-node.png" alt="" title="" class="codeIcon"/>package.json</li>
+          </ul>
+        </div>
+      </div>
+      <div class="codeSection">
+        <pre>
+<span class="comment">1. /* node modules */</span>
+<span class="comment">2.</span> <span class="purple">import</span> { ReactCreateHTMLVideo } <span class="purple">from</span> <span class="green">"react-create-html-video"</span>;
+<span class="comment">3.</span>
+<span class="comment">4. /* module */</span>
+<span class="comment">5.</span> <span class="blue">function</span> UIComponent(): <span class="orange">React.ReactElement</span> {
+<span class="comment">6.</span>   return (
+<span class="comment">7.</span>     &lt;<span class="purple">div</span> <span class="blue">className</span>="heroSection positionRelative"&gt;
+<span class="comment">8.</span>       &lt;<span class="purple">ReactCreateHTMLVideo</span>
+<span class="comment">9.</span>         <span class="blue">mp4</span>=<span class="green">"/path/to/mp4/video.mp4"</span>
+<span class="comment">10.</span>        <span class="blue">webm</span>=<span class="green">"/path/to/webm/video.webm"</span>
+<span class="comment">11.</span>      /&gt;
+<span class="comment">12.</span>    &lt;/<span class="purple">div</span>&gt;
+<span class="comment">13.</span>  );
+<span class="comment">14.</span> }
+<span class="comment">15.</span>
+<span class="comment">16.</span> <span class="comment">/* exports */</span>
+<span class="comment">17.</span> <span class="purple">export</span> default <span class="blue">UIComponent</span>;<span class="cursor"></span>
+        </pre>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- [code sample] -->

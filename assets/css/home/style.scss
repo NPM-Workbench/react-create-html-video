@@ -174,6 +174,92 @@
       }
     }
   }
+  .integration {
+    z-index: 10;
+    background: $black;
+    padding: 100px 20px;
+    .codeEditor {
+      margin-top: -150px;
+      padding: 0;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #333;
+      background: #111;
+      .header {
+        display: flex;
+        padding: 20px;
+        border-bottom: 1px solid #333;
+        .segment {
+          flex-basis: 50%;
+          color: $white;
+          font-size: 0.8rem;
+          &:last-child {
+            display: none;
+          }
+          .round {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 4px;
+            &.red {
+              background: red;
+            }
+            &.yellow {
+              background: yellow;
+            }
+            &.green {
+              background: green;
+            }
+          }
+        }
+      }
+      .body {
+        padding: 20px;
+        .explorer {
+          display: none;
+        }
+        .codeSection {
+          pre {
+            font-family: $monoFont;
+            font-size: 0.85rem;
+            color: $white;
+            margin-bottom: 0;
+            .cursor {
+              width: 7px;
+              height: 15px;
+              background: $white;
+              display: inline-block;
+              vertical-align: middle;
+              margin-top: -4px;
+              margin-left: 2px;
+              animation: cursor-blink-soft 1.2s ease-in-out infinite;
+            }
+            .comment {
+              opacity: 0.3;
+              &.info {
+                display: block;
+                margin-top: 30px;
+              }
+            }
+            .purple {
+              color: #c084fc;
+            }
+            .green {
+              color: #4ade80;
+            }
+            .blue {
+              color: #60a5fa;
+            }
+            .orange {
+              color: #ffa500;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 768px) {
   .homePage {
@@ -206,6 +292,34 @@
         }
       }
     }
+    .integration {
+      .codeEditor {
+        .header {
+          padding: 20px 40px;
+          .segment {
+            &:first-child {
+              flex-basis: 30%;
+            }
+            &:last-child {
+              flex-basis: 70%;
+              display: block;
+              text-align: right;
+              p {
+                word-spacing: -1.5px;
+                font-weight: 300;
+                font-size: 0.8rem;
+                color: #888;
+                margin-top: 2px;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .body {
+          padding: 50px 40px 20px;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 992px) {
@@ -232,6 +346,77 @@
     .features {
       .container {
         padding: 100px 0;
+      }
+    }
+    .integration {
+      .codeEditor {
+        mask-image: linear-gradient(to top, transparent, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.8) 89%, transparent);
+        -webkit-mask-image: linear-gradient(to top, transparent, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.8) 89%, transparent);
+        .body {
+          display: flex;
+          .explorer {
+            display: block;
+            flex-basis: 300px;
+            display: flex;
+            .iconsList {
+              width: 37.5px;
+              border-right: 1px solid #222;
+              padding-right: 15px;
+              ul {
+                margin-bottom: 0;
+                li {
+                  margin-bottom: 25px;
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                  img {
+                    filter: invert(1);
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    opacity: 0.5;
+                  }
+                }
+              }
+            }
+            .fileSection {
+              flex-grow: 1;
+              color: $white;
+              padding-left: 15px;
+              font-size: 0.8rem;
+              .folderIcon,
+              .codeIcon {
+                width: 20px;
+                margin-right: 5px;
+                margin-top: -4px;
+              }
+              .folderIcon {
+                filter: invert(1);
+              }
+              .title {
+                display: block;
+                margin-bottom: 10px;
+              }
+              .appName {
+                display: block;
+                margin-bottom: 5px;
+                .folderIcon {
+                  display: inline-block;
+                }
+              }
+              ul {
+                margin-bottom: 0;
+                padding-left: 15px;
+                li {
+                  margin-bottom: 6.5px;
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

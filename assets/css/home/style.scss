@@ -107,10 +107,8 @@
   }
   .mainInfo {
     .dottedBg {
-      background:
-      url("https://npm-workbench.github.io/react-create-html-video/assets/images/dotted-pattern.jpg")
-      repeat center center;
-      background-size: 100px auto;
+      background: url("https://npm-workbench.github.io/react-create-html-video/assets/images/dotted-pattern.jpg") repeat center center;
+      background-size: 150px auto;
       opacity: 0.25;
       position: absolute;
       inset: 0;
@@ -306,6 +304,11 @@
           font-size: 1.3rem;
           line-height: 2.0rem;
         }
+      }
+    }
+    .mainInfo {
+      .dottedBg {
+        background-size: 100px auto;
       }
     }
     .features {

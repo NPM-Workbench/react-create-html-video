@@ -12,6 +12,10 @@ A lightweight React component that programmatically generates and plays an HTML 
 ```console
 npm install react-create-html-video
 ```
+**Note:** If you are having trouble in some environments like Next.js, try to install with 
+```console 
+npm install --save react-create-html-video@1.2.0
+```
 
 ### 🎲 Features
 

@@ -34,8 +34,8 @@ export type TReactCreateHTMLVideo = {
 
 ```javascript
 "peerDependencies": {
-  "react": ">=17",
-  "react-dom": ">=17"
+  "react": ">=18",
+  "react-dom": ">=18"
 }
 ```
 
@@ -95,6 +95,8 @@ All files  |     100 |      100 |     100 |     100 |
  index.tsx |     100 |      100 |     100 |     100 |
 -----------|---------|----------|---------|---------|-------------------
 ```
+
+<br/>🎯 **Note:** Release(s) 1.4.x has fixed issues related to react-dedup. It was found that inspite of being a react client side component, an error related to ```Cannot read properties of undefined (reading 'ReactCurrentDispatcher')``` was coming up. You can now install this package directly. If issues still persist, please do raise a github issue along with screenshots and comments for me to work on.
 
 ### 📘 Contributing
 

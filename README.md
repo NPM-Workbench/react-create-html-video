@@ -2,6 +2,8 @@
 ![npm](https://img.shields.io/npm/v/react-create-html-video)
 ![downloads](https://img.shields.io/npm/dw/react-create-html-video)
 ![license](https://img.shields.io/npm/l/react-create-html-video)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/react-click-image-play-youtube-video)
+![npm_provenance](https://img.shields.io/badge/npm-provenance-brightgreen?logo=npm)
 
 ## React Create HTML Video
 

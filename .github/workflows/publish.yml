@@ -1,0 +1,38 @@
+name: Publish NPM Package
+on:
+    workflow_dispatch
+permissions:
+    contents: read
+    id-token: write
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Repo Source
+              run: echo "${{ github.repository }}"
+
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                node-version: 24
+                registry-url: https://registry.npmjs.org
+                package-manager-cache: false
+
+            - name: Check Node and NPM Version
+              run: node -v && npm -v
+
+            - name: Install Package Dependencies
+              run: npm ci
+
+            - name: Run Unit Tests
+              run: npm test -- --runInBand
+
+            - name: Build NPM Package
+              run: npm run build
+
+            - name: Publish NPM Package
+              run: npm publish --access public

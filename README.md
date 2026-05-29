@@ -3,6 +3,7 @@
 ![downloads](https://img.shields.io/npm/dw/react-create-html-video)
 ![license](https://img.shields.io/npm/l/react-create-html-video)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/react-click-image-play-youtube-video)
+![Security Policy](https://img.shields.io/badge/security-policy-brightgreen)
 ![npm_provenance](https://img.shields.io/badge/npm-provenance-brightgreen?logo=npm)
 
 ## React Create HTML Video
@@ -104,6 +105,11 @@ All files  |     100 |      100 |     100 |     100 |
 
 Contributions, suggestions, and improvements are welcome.<br/>
 Feel free to open issues or pull requests.
+
+### 🔒 Security & Privacy
+
+1. This package is open source and designed as a lightweight client-side React component. It does not collect, store, sell, or share user data, and it does not include analytics, tracking, telemetry, cookies, local storage usage, backend services, or project-owned data collection systems.
+2. For more details, including vulnerability reporting guidance and consumer security recommendations, please see the [Security Policy](https://github.com/NPM-Workbench/react-create-html-video/security/policy).
 
 ### ❤️ Support
 
